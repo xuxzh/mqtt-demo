@@ -1,0 +1,28 @@
+{
+  "name": "mqtt-demo",
+  "version": "1.0.0",
+  "description": "mqtt demo base nodejs and angular",
+  "main": "index.js",
+  "scripts": {
+    "start:node":"ts-node nodejs/main.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xuxzh/mqtt-demo.git"
+  },
+  "keywords": [
+    "mqtt",
+    "nodejs",
+    "angular"
+  ],
+  "author": "xu_xz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xuxzh/mqtt-demo/issues"
+  },
+  "homepage": "https://github.com/xuxzh/mqtt-demo#readme",
+  "dependencies": {
+    "mqtt": "^4.3.7",
+    "ts-node": "^10.9.1"
+  }
+}

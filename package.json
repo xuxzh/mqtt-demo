@@ -4,7 +4,8 @@
   "description": "mqtt demo base nodejs and angular",
   "main": "index.js",
   "scripts": {
-    "start:node":"ts-node nodejs/main.ts"
+    "start:node":"ts-node nodejs/main.ts",
+    "start:ng":"cd ./angular/mqtt-demo &&npm install && ng serve"
   },
   "repository": {
     "type": "git",

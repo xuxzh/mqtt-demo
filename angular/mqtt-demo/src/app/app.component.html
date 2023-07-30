@@ -1,0 +1,20 @@
+<div>
+  <p>连接操作</p>
+  <button (click)="initConnection()" *ngIf="!isClientReady">连接</button>
+  <button (click)="closeConnection()" *ngIf="isClientReady" >断开连接</button>
+</div>
+<div>
+  <p>订阅操作</p>
+  <button (click)="subscribeTopic()" *ngIf="!isSubReady">订阅</button>
+  <button (click)="unsubscribeTopic()" *ngIf="isSubReady">取消订阅</button>
+  <div><span>订阅信息打印</span></div>
+  <div>
+    <span>{{receiveMsg}}</span>
+  </div>
+</div>
+
+<div>
+  <p>发布操作</p>
+  <input [(ngModel)]="message" placeholder="请输入要发布的信息"/>
+  <button (click)="publish()">发布</button>
+</div>
